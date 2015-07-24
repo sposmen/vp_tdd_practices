@@ -6,6 +6,10 @@
   "scripts": {
     "test": "node_modules\\.bin\\jasmine"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sposmen/vp_tdd_practices.git"
+  },
   "author": "Sposmen",
   "license": "ISC",
   "devDependencies": {
