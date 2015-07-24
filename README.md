@@ -13,3 +13,7 @@ Prerequisite: NodeJs and npm
 3. Install dependencies `npm install`
 4. Run test by `npm test` or jasmine directly `node_modules\.bin\jasmine`
 
+
+## Suggested Links
+
+- [Jasmine Introduction](http://jasmine.github.io/2.3/introduction.html)
