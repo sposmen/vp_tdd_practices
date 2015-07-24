@@ -16,15 +16,17 @@ describe("Validate numeric conversions", function () {
     it('1 to I', function () {
       var result;
       // Arrange
+      numericConverter.setArabicToRomanConverter(arabicConverter);
+
+      // Stubbing
       arabicConverter.convert.and.returnValue("I");
 
       // Act
-      numericConverter.setArabicConverter(arabicConverter);
       result = numericConverter.convert(1, 'ROMAN');
 
       // Assert
-      expect(result).toBe("I");
       expect(arabicConverter.convert).toHaveBeenCalledWith(1);
+      expect(result).toBe("I");
     });
   });
 

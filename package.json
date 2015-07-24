@@ -4,7 +4,7 @@
   "description": "TDD Practices",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "node_modules\\.bin\\jasmine"
   },
   "author": "Sposmen",
   "license": "ISC",
