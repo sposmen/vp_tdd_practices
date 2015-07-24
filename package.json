@@ -1,0 +1,14 @@
+{
+  "name": "tdd_practices",
+  "version": "0.0.1",
+  "description": "TDD Practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Sposmen",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.3.1"
+  }
+}
