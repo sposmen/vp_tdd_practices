@@ -36,5 +36,21 @@ describe("Validate arabic to roman converter", function () {
       });
     });
 
+  describe("from an external resource", function(){
+    ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII']
+      .forEach(function (v, i) {
+        var arabicNumber = i + 1,
+          itText = "changing " + arabicNumber + " to " + v;
+        it(itText, function () {
+          // Arrange
+          var converted;
+          // Act
+          converted = converter.convertByString(arabicNumber);
+
+          // Assert
+          expect(converted).toEqual(v)
+        });
+      });
+  })
 
 });

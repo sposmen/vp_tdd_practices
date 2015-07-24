@@ -86,6 +86,7 @@ describe("Validate numeric conversions", function () {
       expect(binaryConverter.convert).toHaveBeenCalledWith(2);
       expect(result).toBe("10");
     });
+
     it('3 to 11', function () {
       var result;
       // Arrange
@@ -101,6 +102,7 @@ describe("Validate numeric conversions", function () {
       expect(binaryConverter.convert).toHaveBeenCalledWith(3);
       expect(result).toBe("11");
     });
+
     it('4 to 100', function () {
       var result;
       // Arrange
