@@ -1,6 +1,6 @@
 # TDD Practices
 
-This is a repo that intends to replicate initial Java TDD capacitation.
+This is a repo that intends to replicate initial [Java TDD capacitation](https://github.com/adrianmoya/vp-tdd-training).
 
 ## How execute the tests
 
