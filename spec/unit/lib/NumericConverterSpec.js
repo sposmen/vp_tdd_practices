@@ -28,7 +28,7 @@ describe("Validate numeric conversions", function () {
   describe("from arabic numbers to roman:", function () {
     var arabicConverter;
     beforeEach(function() {
-      arabicConverter = jasmine.createSpyObj('arabicConverter', ['convert']);
+      arabicConverter = jasmine.createSpyObj('arabicConverter', ['convertByString']);
     });
 
     it('1 to I', function () {
@@ -37,13 +37,13 @@ describe("Validate numeric conversions", function () {
       numericConverter.setArabicToRomanConverter(arabicConverter);
 
       // Stubbing
-      arabicConverter.convert.and.returnValue("I");
+      arabicConverter.convertByString.and.returnValue("I");
 
       // Act
       result = numericConverter.convert(1, NumericSystem.ROMAN);
 
       // Assert
-      expect(arabicConverter.convert).toHaveBeenCalledWith(1);
+      expect(arabicConverter.convertByString).toHaveBeenCalledWith(1);
       expect(result).toBe("I");
     });
   });

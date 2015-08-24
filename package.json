@@ -13,6 +13,11 @@
   "author": "Sposmen",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^2.3.1"
+    "cucumber": "^0.5.2",
+    "grunt": "^0.4.5",
+    "grunt-cucumber": "^0.3.0",
+    "jasmine": "^2.3.1",
+    "phantomjs": "^1.9.18",
+    "wd": "^0.3.12"
   }
 }
